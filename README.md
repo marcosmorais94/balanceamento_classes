@@ -8,4 +8,9 @@ Além disso um passo importante para tal é a criação de variáveis dummy que 
 Muitas vezes o dataset do mundo real não vem balanceado, ou seja, a distribuição das categorias que tentamos prever não é igual ou próxima disso. 
 Por exemplo, em um dataset de transações bancárias com e sem fraude, os registros sem fraude serão muito maiores que o outro. Isso é óbvio porque temos muito mais pessoas realizando operações dentro da lei do que o contrário. 
 
-Dito isso, precisamos igualar esse número de registros porque o algoritmo precisa "aprender" 
+Dito isso, precisamos igualar esse número de registros porque o algoritmo precisa "aprender" com a exposição a um número de registros parecidos, um divisão de 45/55 entre as classes mais ou menos. Fora isso, é recomendado balancear as classes porque a acurácia e demais métricas do modelos melhoram subtancialmente. 
+
+## Informações Complementares
+O datatset usado para esse exemplo já tinha variáveis dummy, isso é utilizado quando temos variáveis categóricas entre os atributos. Como disse anteriormente, vou compartilhar um script em R para demostrar como se faz essa transformação.
+
+Caso tenha alguma sugestão, fique à vontade para compartilhar!!
